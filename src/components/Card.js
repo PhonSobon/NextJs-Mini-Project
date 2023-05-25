@@ -13,7 +13,10 @@ export default function Card({ title, image, price, id }) {
     >
       <Link href={`/products/${id}`}>
         <Image
-          className="p-8 rounded-t-lg"
+          unoptimized
+          // fill
+          width={100} height={100}
+          className="p-8 rounded-t-lg h-96 w-full object-cover"
           src={image ? image : "/images/placeholder-image.png"}
           alt="product image"
         />

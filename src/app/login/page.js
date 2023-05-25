@@ -248,7 +248,7 @@ function FileUpload({ field, form, setFieldValue }) {
         className="border border-gray-500 rounded px-4 py-2"
       />
       {previewImage && (
-        <Image src={previewImage} alt="preview" className="mt-4 h-20 w-20" />
+        <Image src={previewImage} alt="preview" unoptimized width={100} height={100} className="mt-4 h-20 w-20" />
       )}
     </>
   );

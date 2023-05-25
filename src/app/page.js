@@ -29,21 +29,18 @@ export async function getUsers(){
   const usersData = await res.json();
   return usersData;
 }
-export function sortProduct(products) {
-  return products.sort((a, b) => b.id - a.id);
-}
+
 
 export default async function Home() {
   const products = await getData();
   const categories =await getCategoryList();
   const users = await getUsers();
-  const sortedProducts = sortProduct(products);
   return (
     <main className="p-16">
       <BannerHomePage/>
       <h1 className=" text-center mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-black border-b-4">Product</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:grid xl:grid-cols-4 ">
-          {sortedProducts.map((product) => (
+          {products.map((product) => (
               <Card
                 key={product.id}
                 id={product.id}

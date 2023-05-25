@@ -63,6 +63,9 @@ export default async function ProductDetails({ params }) {
           <div className="hidden relative lg:block lg:col-span-3">
               {product.images&&(
                   <Image
+                  unoptimized
+                  width={100}
+                   height={100}
                   className="absolute inset-0 w-full h-full object-cover object-center" 
                   src={product.images[0]}
                   alt="Ad- woman on a beach"/>

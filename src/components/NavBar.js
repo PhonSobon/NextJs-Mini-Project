@@ -12,8 +12,11 @@ export default function NavBar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
           <Image
+            unoptimized
+            width={100}
+            height={100}
             src="https://cdn.dribbble.com/users/60166/screenshots/15558186/media/fa6bd0b894439dd443fa89956d74719b.jpg?compress=1&resize=400x300&vertical=top"
-            className="h-10 mr-5"
+            className="h-12 w-14 mr-5"
             alt="life"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

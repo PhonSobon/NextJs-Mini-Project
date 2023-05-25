@@ -96,10 +96,13 @@ function CustomInput({ field, form, isSubmitting, ...props }) {
         <div className='avatar'>
           <div className='w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2'>
             <Image
+             unoptimized
+            width={100} 
+            height={100}
               src={preview}
+             
+              
               alt='dummy'
-              width='100'
-              height='100'
             />
           </div>
         </div>
