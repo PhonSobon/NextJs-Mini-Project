@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const FILE_SIZE = 1024 * 1024 * 10; // 10MB
 const SUPPORTED_FORMATS = ["image/jpg", "image/jpeg", "image/gif", "image/png"];
-export const metadata = {
+const metadata = {
   title: "Contact Page",
   description: "This is the home page",
 };
