@@ -6,7 +6,34 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Home Page",
-  description: "This is the home page",
+  description:"Start your life",
+    locale: 'en-US',
+    category: 'education',
+    type: 'website',
+    siteName: 'start',
+    manifest: '/manifest.json',
+    openGraph:{
+        title: 'Home -page',
+        description: "Start your life",
+        url: '/',
+        siteName: 'Start',
+        images: [
+            {
+                url: "/og-image.jpg",
+                width: 800,
+                height: 600,
+            },
+        ]
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: {
+            template: 'Home - page'
+        },
+        description: "Start your life",
+        creator: '@start',
+        images: ["/og-image.jpg"],
+    }
 };
 
 // get data from API
